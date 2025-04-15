@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Proyectos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body class="projects-page">
+    <div class="container">
+        <h1 class="title">Catálogo de Proyectos</h1>
+        <section class="catalog">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="project1.jpg" alt="Proyecto 1">
+                <h3>Clusterización de Frijoles Secos: Análisis y Agrupamiento</h3>
+                <p>Este proyecto explora la agrupación de siete variedades de frijoles secos utilizando un sistema de visión por computadora. Se analiza una serie de características físicas como el área, perímetro, redondez, y compactación para identificar patrones y clasificar uniformemente los frijoles según estándares de calidad. El objetivo es facilitar la detección de anomalías y garantizar una clasificación eficiente para el mercado, destacando las propiedades únicas de cada tipo de frijol.</p>
+                <div class="buttons">
+                    <button onclick="openModal('https://nbviewer.org/github/ssebasarias/Universidad/blob/main/Semestre%206/Anaisis%20multivariado/Trabajo%20Clusters/Kmean/Kmean.ipynb')">Ver Más</button>
+                    <a href="https://github.com/ssebasarias/Universidad/blob/main/Semestre%206/Anaisis%20multivariado/Trabajo%20Clusters/Kmean/Kmean.ipynb" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="project2.jpg" alt="Proyecto 2">
+                <h3>Predicción de Ventas</h3>
+                <p>Modelo de predicción utilizando regresión lineal.</p>
+                <div class="buttons">
+                    <button onclick="openModal('notebook2.html')">Ver Más</button>
+                    <a href="https://github.com/tu-repo/proyecto2" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="project3.jpg" alt="Proyecto 3">
+                <h3>Clustering</h3>
+                <p>Segmentación de clientes con K-means.</p>
+                <div class="buttons">
+                    <button onclick="openModal('notebook3.html')">Ver Más</button>
+                    <a href="https://github.com/tu-repo/proyecto3" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">Cerrar</button>
+            <iframe id="modal-iframe" src=""></iframe>
+        </div>
+    </div>
+</body>
+</html>
