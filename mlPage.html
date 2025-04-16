@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Machine Learning | Sebas Arias</title>
+  <link rel="stylesheet" href="./css/proyectos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="./js/proyectos.js" defer></script>
+</head>
+
+<body class="projects-page">
+  <!-- NAV -->
+  <nav class="navbar" data-aos="fade-up">
+    <div class="nav-container">
+      <a href="index.html" class="logo">🏠 Home</a>
+      <div class="nav-links">
+        <a href="analisisPage.html">📊 Análisis de Datos</a>
+        <a href="frontPage.html">💻 Frontend & FullStack</a>
+        <a href="codeLabPage.html">🧪 Code Lab</a>
+        <a href="mlPage.html">🤖 Machine Learning</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="title" data-aos="fade-up">Proyectos de Machine Learning 🤖</h1>
+    <h2 class="subtitle" data-aos="fade-up">Aplicaciones y modelos predictivos usando Python y Scikit-learn</h2>
+
+    <section class="catalog">
+      <!-- Proyecto 1 -->
+      <div class="card" data-aos="fade-up">
+        <img src="assets/img/ml1.jpg" alt="Modelo de Clasificación">
+        <h3>Clasificación de Obesidad</h3>
+        <p>
+          Se entrena un modelo de clasificación para predecir niveles de obesidad a partir de hábitos alimenticios y actividad física. Evaluación con métricas de precisión, recall y matriz de confusión.
+          <br><strong>Tecnologías:</strong> Python, Scikit-learn, Pandas, Matplotlib.
+        </p>
+        <div class="buttons">
+          <button onclick="openModal('https://nbviewer.org/github/ssebasarias/MachineLearning/blob/main/obesidad_classifier.ipynb')">Preview</button>
+          <a href="https://github.com/ssebasarias/MachineLearning/blob/main/obesidad_classifier.ipynb" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="card" data-aos="fade-up">
+        <img src="assets/img/ml2.jpg" alt="Regresión de ingresos">
+        <h3>Regresión de Ingresos</h3>
+        <p>
+          Se implementa un modelo de regresión para estimar ingresos a partir de variables como edad, educación y ocupación. Análisis del error cuadrático medio y visualización del ajuste.
+          <br><strong>Tecnologías:</strong> Python, Scikit-learn, Seaborn.
+        </p>
+        <div class="buttons">
+          <button onclick="openModal('https://nbviewer.org/github/ssebasarias/MachineLearning/blob/main/regresion_ingresos.ipynb')">Preview</button>
+          <a href="https://github.com/ssebasarias/MachineLearning/blob/main/regresion_ingresos.ipynb" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="card" data-aos="fade-up">
+        <img src="assets/img/ml3.jpg" alt="Modelo KNN">
+        <h3>Clasificación con KNN</h3>
+        <p>
+          Se explora el algoritmo KNN para clasificación de flores del dataset Iris. Análisis de hiperparámetros como `k`, y visualización de resultados.
+          <br><strong>Tecnologías:</strong> Python, Scikit-learn, Matplotlib.
+        </p>
+        <div class="buttons">
+          <button onclick="openModal('https://nbviewer.org/github/ssebasarias/MachineLearning/blob/main/iris_knn.ipynb')">Preview</button>
+          <a href="https://github.com/ssebasarias/MachineLearning/blob/main/iris_knn.ipynb" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal()">Cerrar</button>
+      <iframe id="modal-iframe" src=""></iframe>
+    </div>
+  </div>
+
+  <!-- AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 3000,
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Análisis de Datos | Sebas Arias</title>
+  <link rel="stylesheet" href="./css/proyectos.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="./js/analisis.js" defer></script>
+</head>
+
+<body class="projects-page">
+    <nav class="navbar" data-aos="fade-up">
+        <div class="nav-container">
+          <a href="index.html" class="logo">🏠 Home</a>
+          <div class="nav-links">
+            <a href="analisisPage.html">📊 Análisis de Datos</a>
+            <a href="./frontPage.html">💻 Frontend & FullStack</a>
+            <a href="codeLabPage.html">🧪 Code Lab</a>
+            <a href="mlPage.html">🤖 Machine Learning</a>
+          </div>
+        </div>
+      </nav>
+      
+  <div class="container">
+    <h1 class="title" data-aos="fade-up">Proyectos de Análisis de Datos 📊</h1>
+    <h2 class="subtitle" data-aos="fade-up">Mis experimentos, proyectos académicos y personales</h2>
+
+    <section class="catalog">
+      <!-- Proyecto 1 -->
+      <div class="card" data-aos="fade-up">
+        <img src="assets/img/project1.jpg" alt="Proyecto KMeans">
+        <h3>Clusterización de Frijoles Secos</h3>
+        <p>Se agrupan siete variedades de frijoles secos con visión por computadora y análisis de variables como área, redondez y compactación. Ideal para clasificación eficiente y detección de anomalías.</p>
+        <div class="buttons">
+          <button onclick="openModal('https://nbviewer.org/github/ssebasarias/Universidad/blob/main/Semestre%206/Anaisis%20multivariado/Trabajo%20Clusters/Kmean/Kmean.ipynb')">Codigo</button>
+          <a href="https://github.com/ssebasarias/Universidad/blob/main/Semestre%206/Anaisis%20multivariado/Trabajo%20Clusters/Kmean/Kmean.ipynb" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="card" data-aos="fade-up">
+        <img src="assets/img/project2.jpg" alt="Proyecto 2">
+        <h3>Predicción de Ventas</h3>
+        <p>Modelo de regresión lineal para anticipar el comportamiento de ventas según variables clave.</p>
+        <div class="buttons">
+          <button onclick="openModal('notebook2.html')">Codigo</button>
+          <a href="https://github.com/tu-repo/proyecto2" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="card" data-aos="fade-up">
+        <img src="assets/img/project3.jpg" alt="Proyecto 3">
+        <h3>Segmentación de Clientes</h3>
+        <p>K-means aplicado a perfiles de usuarios para campañas personalizadas y análisis de patrones de consumo.</p>
+        <div class="buttons">
+          <button onclick="openModal('notebook3.html')">Codigo</button>
+          <a href="https://github.com/tu-repo/proyecto3" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+    
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal()">Cerrar</button>
+      <iframe id="modal-iframe" src=""></iframe>
+    </div>
+  </div>
+
+  <!-- Animación AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 3000, // Duración de la animación
+    });
+  </script>
+</body>
+</html>

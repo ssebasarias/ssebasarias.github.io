@@ -1,0 +1,278 @@
+/* =============================== */
+/*        ANALYSIS PAGE STYLES    */
+/* =============================== */
+
+:root {
+    --color-primary: #0F0F0F;
+    --color-secondary: #B0B0B0;
+    --color-text: #FFFFFF;
+    --color-background: #F4F4F4;
+    --color-hover: #444444;
+    --color-shadow: rgba(0, 0, 0, 0.2);
+    --color-border: #D1D1D1;
+    --color-accent: #999999;
+}
+
+.projects-page {
+    background: linear-gradient(to bottom, #f4f4f4, #e8e8e8);
+    color: var(--color-primary);
+    min-height: 100vh;
+    padding-top: 100px;
+}
+  
+  /* =============== NAVBAR =============== */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--color-primary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 15px 0;
+    border-radius: 0 0 16px 16px;
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  
+  .navbar .nav-links a {
+    color: var(--color-text);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-links a:hover {
+    color: var(--color-secondary);
+  }
+
+  /* Fondo de la página */
+  .projects-page {
+    background: linear-gradient(to bottom, #f4f4f4, #e2e2e2);
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    min-height: 100vh;
+    padding: 60px 5%;
+  }
+  
+  /* Título principal */
+  .container {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 30px;
+  }
+
+  .projects-page .title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--color-primary);
+  }
+  
+
+  .subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--color-secondary);
+    margin-bottom: 10px;
+  }
+  
+  .back-home {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .btn-back {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-back:hover {
+    background-color: var(--color-hover);
+  }
+  
+/* ============================ */
+/*     TARJETAS DE PROYECTOS   */
+/* ============================ */
+  
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 60px;
+}
+
+.catalog .card {
+    background-color: var(--color-text);
+    border-radius: 16px;
+    border: 1px solid var(--color-border);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    height: 430px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.catalog .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+.catalog .card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.catalog .card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.catalog .card h3::before {
+  content: "📌";
+  font-size: 1rem;
+}  
+
+.catalog .card p {
+    font-size: 0.95rem;
+    color: var(--color-secondary);
+    flex-grow: 1;
+    overflow: hidden;
+    margin: 0 0 30px 0; /* solo margen inferior, más controlado */
+}
+  
+/* ============================ */
+/*           BOTONES           */
+/* ============================ */
+.catalog .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: auto;
+    padding-top: 10px;
+  }
+  
+
+.catalog .buttons button,
+.catalog .buttons a {
+  padding: 10px 15px;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.catalog .buttons button:hover,
+.catalog .buttons a:hover {
+  background-color: var(--color-hover);
+}
+
+  
+  /* =============================== */
+  /*            MODAL STYLES        */
+  /* =============================== */
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+  }
+  
+  .modal-content {
+    background-color: var(--color-text);
+    border-radius: 16px;
+    margin: 60px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .modal-content iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+    border: none;
+    padding: 8px 14px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .close-modal:hover {
+    background-color: var(--color-hover);
+  }
+  
+  /* =============================== */
+  /*            RESPONSIVE          */
+  /* =============================== */
+  
+  @media (max-width: 768px) {
+    .catalog .card {
+      width: 100%;
+    }
+  
+    .modal-content {
+      margin: 40px auto;
+      height: 70vh;
+    }
+  }
+  

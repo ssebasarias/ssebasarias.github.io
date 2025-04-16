@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Code Lab | Sebas Arias</title>
+  <link rel="stylesheet" href="./css/proyectos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="./js/proyectos.js" defer></script>
+</head>
+
+<body class="projects-page">
+  <!-- NAV -->
+  <nav class="navbar" data-aos="fade-up">
+    <div class="nav-container">
+      <a href="index.html" class="logo">🏠 Home</a>
+      <div class="nav-links">
+        <a href="analisisPage.html">📊 Análisis de Datos</a>
+        <a href="frontPage.html">💻 Frontend & FullStack</a>
+        <a href="codeLabPage.html">🧪 Code Lab</a>
+        <a href="mlPage.html">🤖 Machine Learning</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO -->
+  <div class="container">
+    <h1 class="title" data-aos="fade-up">Code Lab 🧪</h1>
+    <h2 class="subtitle" data-aos="fade-up">Proyectos experimentales, prácticos y divertidos</h2>
+
+    <section class="catalog">
+      
+      <!-- Proyecto 1 -->
+      <div class="card" data-aos="fade-up">
+        <img src="assets/img/proyectos/password-generator.jpg" alt="Generador de contraseñas">
+        <h3>Generador de Contraseñas 🔐</h3>
+        <p>
+          Aplicación sencilla para crear contraseñas seguras con opciones de longitud, símbolos y números.<br>
+          <strong>Tecnologías:</strong> HTML, CSS, JavaScript.
+        </p>
+        <div class="buttons">
+          <button onclick="openPreview('assets/videos/password-generator.mp4', true)">Preview</button>
+          <a href="https://github.com/ssebasarias/password-generator" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="card" data-aos="fade-up">
+        <img src="assets/img/proyectos/calculadora.jpg" alt="Calculadora interactiva">
+        <h3>Calculadora Interactiva 🧮</h3>
+        <p>
+          Calculadora moderna con interfaz amigable, animaciones y modo claro/oscuro.<br>
+          <strong>Tecnologías:</strong> HTML, CSS, JavaScript.
+        </p>
+        <div class="buttons">
+          <button onclick="openPreview('assets/videos/calculadora.mp4', true)">Preview</button>
+          <a href="https://github.com/ssebasarias/calculadora-js" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="card" data-aos="fade-up">
+        <img src="assets/img/proyectos/contador.jpg" alt="Contador dinámico">
+        <h3>Contador Dinámico 🧮</h3>
+        <p>
+          App simple para contar clics, con persistencia en localStorage y diseño responsive.<br>
+          <strong>Tecnologías:</strong> HTML, CSS, JavaScript.
+        </p>
+        <div class="buttons">
+          <button onclick="openPreview('assets/videos/contador.mp4', true)">Preview</button>
+          <a href="https://github.com/ssebasarias/contador" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal()">Cerrar</button>
+      <div id="preview-content"></div>
+    </div>
+  </div>
+
+  <!-- AOS animaciones -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 3000 });
+  </script>
+</body>
+</html>

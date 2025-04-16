@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frontend & FullStack | Sebas Arias</title>
+  <link rel="stylesheet" href="./css/proyectos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="./js/proyectos.js" defer></script>
+</head>
+
+<body class="projects-page">
+  <!-- NAV -->
+  <nav class="navbar" data-aos="fade-up">
+    <div class="nav-container">
+      <a href="index.html" class="logo">🏠 Home</a>
+      <div class="nav-links">
+        <a href="analisisPage.html">📊 Análisis de Datos</a>
+        <a href="frontPage.html">💻 Frontend & FullStack</a>
+        <a href="codeLabPage.html">🧪 Code Lab</a>
+        <a href="mlPage.html">🤖 Machine Learning</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO -->
+  <div class="container">
+    <h1 class="title" data-aos="fade-up">Frontend & FullStack 💻</h1>
+    <h2 class="subtitle" data-aos="fade-up">CRUDs, tiendas virtuales y apps web completas</h2>
+
+    <section class="catalog">
+      
+      <!-- Proyecto 1: Distridulces -->
+      <div class="card" data-aos="fade-up">
+        <img src="assets/img/proyectos/distridulces.jpg" alt="Distridulces">
+        <h3>Distridulces 🍬</h3>
+        <p>
+          Plataforma de comercio digital para productos de supermercado. 
+          Integra CRUD, carrito de compras, alertas y diseño responsive.<br>
+          <strong>Tecnologías:</strong> JavaScript, PHP, Bootstrap, MySQL.
+        </p>
+        <div class="buttons">
+          <button onclick="openPreview('assets/videos/distridulces.mp4', true)">Preview</button>
+          <a href="https://github.com/ssebasarias/distridulces" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Proyecto 2: CRUD Biblioteca -->
+      <div class="card" data-aos="fade-up">
+        <img src="assets/img/proyectos/biblioteca.jpg" alt="CRUD Biblioteca">
+        <h3>CRUD Biblioteca 📚</h3>
+        <p>
+          Sistema completo para gestionar libros, usuarios y préstamos, con validación y filtros.<br>
+          <strong>Tecnologías:</strong> React, Node.js, PostgreSQL.
+        </p>
+        <div class="buttons">
+          <button onclick="openPreview('assets/videos/biblioteca.mp4', true)">Preview</button>
+          <a href="https://github.com/ssebasarias/crud-biblioteca" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Proyecto 3: Tienda Virtual -->
+      <div class="card" data-aos="fade-up">
+        <img src="assets/img/proyectos/tienda-css.jpg" alt="Tienda Virtual HTML y CSS">
+        <h3>Tienda Virtual 🛍️</h3>
+        <p>
+          Página estática con diseño atractivo para catálogo de productos.<br>
+          <strong>Tecnologías:</strong> HTML, CSS.
+        </p>
+        <div class="buttons">
+          <button onclick="openPreview('assets/videos/tienda-css.mp4', true)">Preview</button>
+          <a href="https://github.com/ssebasarias/tienda-css" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- MODAL Preview -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal()">Cerrar</button>
+      <div id="preview-content"></div>
+    </div>
+  </div>
+
+  <!-- Librerías externas -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 3000 });
+  </script>
+</body>
+</html>
