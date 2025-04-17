@@ -36,15 +36,18 @@ document.addEventListener('DOMContentLoaded', () => {
 const certificatesData = [
     { img: 'assets/img/certificados/cert1.jpg', title: 'Curso Básico de Programación' },
     { img: 'assets/img/certificados/cert2.jpg', title: 'Python' },
-    { img: 'assets/img/certificados/cert3.jpg', title: 'Curso de Computación Básica' },
-    { img: 'assets/img/certificados/cert5.jpg', title: 'Entorno con Jupyter y Anaconda' },
-    { img: 'assets/img/certificados/cert6.jpg', title: 'Curso de Frontend Developer' },
-    { img: 'assets/img/certificados/cert8.jpg', title: 'Curso de Git y GitHub' },
-    { img: 'assets/img/certificados/cert9.jpg', title: 'Terminal y Línea de Comandos' },
-    { img: 'assets/img/certificados/cert10.jpg', title: 'Gestión de NPM' },
-    { img: 'assets/img/certificados/cert11.jpg', title: 'Algoritmos y Diagramas de Flujo' },
-    { img: 'assets/img/certificados/cert13.jpg', title: 'Práctico Frontend Developer' },
-    { img: 'assets/img/certificados/cert14.jpg', title: 'Práctico JavaScript' },
+    { img: 'assets/img/certificados/cert3.jpg', title: 'Entorno con Jupyter y Anaconda' },
+    { img: 'assets/img/certificados/cert4.jpg', title: 'Curso de Frontend Developer' },
+    { img: 'assets/img/certificados/cert5.jpg', title: 'Curso de Git y GitHub' },
+    { img: 'assets/img/certificados/cert6.jpg', title: 'Terminal y Línea de Comandos' },
+    { img: 'assets/img/certificados/cert7.jpg', title: 'Gestión de NPM' },
+    { img: 'assets/img/certificados/cert8.jpg', title: 'Basico JavaScript' },
+    { img: 'assets/img/certificados/cert9.jpg', title: 'Pensamiento Logico' },
+    { img: 'assets/img/certificados/cert10.jpg', title: '' },
+    { img: 'assets/img/certificados/cert11.jpg', title: '' },
+    { img: 'assets/img/certificados/cert12.jpg', title: '' },
+    { img: 'assets/img/certificados/cert13.jpg', title: '' },
+    { img: 'assets/img/certificados/cert14.jpg', title: '' },
   ];
   
   let currentSlide = 0;
